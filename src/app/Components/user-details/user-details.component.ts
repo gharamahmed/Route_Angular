@@ -26,6 +26,7 @@ export class UserDetailsComponent {
           next:(data)=>{
             //console.log(data)
             this.user = data;
+            console.log(data)
           },
           error:(err)=>{console.log(err)}
         }

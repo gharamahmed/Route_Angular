@@ -1,6 +1,7 @@
-<div class="alert alert-dark" *ngFor="let u of users">
+<div class= "row"style="text-align: center; display: flex ; justify-content: space-around;">
+<div class="alert alert-dark col-5" *ngFor="let u of users" style="margin-top: 20px;">
     <p>ID: {{u.id}}</p>
     <p>Name: {{u.name}}</p>
-    <p>Email: {{u.email}}</p>
-    <input type="button" value="Details" [routerLink]="['users',u.id]" />
+    <a [routerLink]="['users',u.id]"><p>Email: {{u.email}}</p></a>
+  </div>
 </div>
